@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+:root{
+    --color-dark: #292929;
+    --color-bg: #FFFFFF;
+    --color-green: #01996D;
+    --color-dark-green:#245852;
+    --color-black:#000000;
+    --color-gray:  #484848;
+
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("fonts/georgia\ bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato.ttf");
+}
+
+body {
+	margin: 0;
+    background-color: var(--color-bg);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding:0;
+    margin:0;
+}
+.text-p {
+    color:var(--color-gray);
+    font-family: "Lato";
+    font-size: 20px;
+}
+.h2-title {
+    color: var(--color-green);
+    font-family: "Georgia";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%;
+}
+.h6-title {
+    color: var(--color-gray);
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 157%;
+}
+.button {
+    border-radius: 4px;
+    border: 1px solid var(--color-green);
+    background: var(--color-green);
+    color: var(--color-bg);
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    cursor:pointer;
+}
+li{
+    list-style: none;
+    margin-right: 72px;
+}
+/*header*/
+
+.container{
+    max-width: 1367px;
+    margin: 0 auto;
+}
+.menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--color-bg);
+    position: fixed;
+    right:0;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+.logo {
+    margin-right: 172px;
+}
+.logo-image {
+    width:79px;
+    height: 23px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 283px;
+}
+a{
+    text-decoration: none;
+    color: var(--color-dark);
+}
+.menu-left-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign {
+    margin-right: 35px;
+}
+.welcome {
+    background-image: url("img/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 85px; 
+}
+.main-title {
+    color: var(--color-green);
+    font-family: "Georgia";
+    font-size: 65px;
+    font-weight: 700;
+    width: 440px;
+    padding-top: 175px;
+}
+.text-main {
+    font-weight: 400;
+    line-height: 157%;
+    width: 440px;
+    padding-top: 30px;
+    margin-bottom: 57px;
+}
+.button-menu{
+    width: 183px;
+    height: 51px;
+}
+.button-main {
+    margin-bottom: 353px;
+    width: 227px;
+    height: 65px;
+}
+/*How it works*/
+.how {
+    padding-top: 120px;
+}
+.how_items {
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    margin-bottom: 128px;
+}
+.title-how{
+    width: 584px;
+    margin-right: 136px;
+}
+.text-how {
+    font-weight: 500;
+    line-height: 150%;
+    width: 671px;
+    padding-top: 30px;
+}
+.cards_flex_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    min-height:862px;
+}
+.card_item {
+    width:395px;
+}
+.card-item-down{
+    margin-top: 200px;
+    margin-bottom: 51px;
+}
+.number-card {
+    color: rgba(1, 153, 109, 0.20);
+    text-align: left;
+    font-family: "Georgia";
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 150%;
+    position: relative;
+}
+.name-card {
+    color: #000;
+    text-align: left;
+    font-family: "Georgia";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 150%;
+    position: absolute;
+    top:55%;
+    left:20%;
+}
+.text-card {
+    margin-bottom: 60px;
+}
+.card-image{
+    border-radius: 12px;
+}
+/*Video story*/
+.video-story {
+    background-color: var(--color-dark-green);
+}
+.video-item {
+    padding-top: 229px;
+    padding-bottom: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-left-block {
+    width:580px;
+    margin-right: 60px ;
+}
+.video-title {
+    color: #FFF;
+    font-family: "Georgia";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%;
+    margin-bottom: 33px;
+}
+.video-text{
+    color: #FFF;
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 157%; /* 39.25px */
+    margin-bottom: 57px;
+}
+video{
+    border-radius:13px;
+}
+.button-video{
+    width:240px;
+    height:60px;
+}
+/*our products*/
+.product {
+    padding-top: 120px;
+}
+.our-froduct-flex {
+    display:flex;
+    justify-content: center;
+    align-items: start;
+   
+}
+.item-left {
+    border-radius: 18.112px;
+    background: rgba(1, 153, 109, 0.20);
+    background-image: url("img/product_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width:638px;
+    height: 573px;
+    margin-right:86px;
+    position: relative;
+    margin-left: 57px;
+}
+.image-custom-card{
+    position: absolute;
+    right: 403px; /* Adjust this value as needed */
+    top: 354px; 
+    filter: drop-shadow(0px 3.62249493598938px 18.11247444152832px rgba(165, 165, 165, 0.25));
+    width:296px;
+    height: 293px;
+}
+.item-right {
+    width:584px;
+    margin-bottom: 45px;
+}
+.text-product {
+    width:530px;
+    margin-bottom: 40px;
+}
+/*Footer*/
+.footer {
+    background-color: var(--color-dark-green);
+    padding-top: 95px;
+    padding-bottom: 144px;
+
+}
+.footer-title {
+    color: #FFF;
+    font-family: "Lato";
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    
+}
+.link{
+    color: #FFF;
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.link:last-child{
+    margin-bottom: 0;
+}
